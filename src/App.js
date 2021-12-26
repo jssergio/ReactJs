@@ -1,6 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import Item from "./components/Item";
+import Card from "./components/Card";
+import Counter from "./components hooks/Counter";
 
+const App= () => {
+  return (<>
+    <h1>REACT PROJETO 01</h1>
+    <p>Evitar criar Divs</p>
+   <ul>
+   {/*<Item texto='Item 01'/>
+   <Item texto='Item 02'/>  forma Defaul de Inserir texto */}
+   <Item>Item 01</Item>
+   <Item>Item 02</Item>  
+  </ul>
+  <Card/>
+  <Counter/>
+   </>)
+ 
+}
+export default App;
+
+// ----Codigo Original----
+/*import logo from './logo.svg';
+import './App.css';
 function App() {
   return (
     <div className="App">
@@ -21,5 +42,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+export default App;*/
